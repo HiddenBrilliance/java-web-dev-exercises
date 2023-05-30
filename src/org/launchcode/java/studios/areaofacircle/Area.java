@@ -5,15 +5,22 @@ public class Area {
         java.util.Scanner input;
         Double radiusOfCircle;
         Double pi = 3.14;
-        Double areaOfCircle;
-
+        Double area;
 
         input = new java.util.Scanner(System.in);
         System.out.println("What is the radius of the circle? ");
+
+
         radiusOfCircle = input.nextDouble();
 
-        areaOfCircle = radiusOfCircle * pi;
-        System.out.println("The area of the rectangle is: " + areaOfCircle);
+        area = Circle.getArea(radiusOfCircle);
+
+
+
+
+//
+//        areaOfCircle = radiusOfCircle * pi;
+        System.out.println("The area of the rectangle is: " + area);
 
 
 

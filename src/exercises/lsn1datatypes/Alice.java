@@ -16,8 +16,7 @@ public class Alice {
         System.out.println("Enter a word in to see if it is in the Alice and Wonderland paragraph below:");
         userInput = input.next();
 
-        checker = userInput.contains("aliceText"); // would expect the "true" boolean when Alice is put in but is returning false
-
+        checker = aliceText.contains(userInput);
         System.out.println(checker);
 
 
